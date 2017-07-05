@@ -1,0 +1,2 @@
+FROM nginx
+COPY photo-web/dist /usr/share/nginx/html
