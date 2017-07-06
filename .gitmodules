@@ -1,0 +1,6 @@
+[submodule "photo-server"]
+	path = photo-server
+	url = https://github.com/ComputePractice2017/photo-server.git
+[submodule "photo-web"]
+	path = photo-web
+	url = https://github.com/ComputePractice2017/photo-web.git
