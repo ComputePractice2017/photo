@@ -1,10 +1,11 @@
 FROM golang
 
-ADD photo-server /Gopath/src/github.com/practice2017/photo-server 
-
 RUN go get "github.com/gorilla/mux"
 RUN go get "github.com/gorilla/handlers"
 RUN go get "gopkg.in/gorethink/gorethink.v3"
+RUN go get "github.com/renstrom/shortuuid"
+
+ADD photo-server /go/src/github.com/practice2017/photo-server 
 RUN go install github.com/practice2017/photo-server
 
 ENTRYPOINT /go/bin/photo-server
